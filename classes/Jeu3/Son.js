@@ -13,11 +13,11 @@ export class Son
         const audioEngine = await BABYLON.CreateAudioEngineAsync();
 
 
-        this.#musique = await BABYLON.CreateSoundAsync("musique", "../../assets/sounds/musique.mp3");
-        this.#sonMort = await BABYLON.CreateSoundAsync("sonMort", "../../assets/sounds/mort.mp3");
-        this.#sonBonus = await BABYLON.CreateSoundAsync("sonBonus", "../../assets/sounds/bonus.mp3");
-        this.#sonCauchemar = await BABYLON.CreateSoundAsync("sonCauchemar", "../../assets/sounds/cauchemar.mp3");
-        this.#sonSortie = await BABYLON.CreateSoundAsync("sonSortie", "../../assets/sounds/sortie.mp3");
+        this.#musique = await BABYLON.CreateSoundAsync("musique", "./assets/sounds/musique.mp3");
+        this.#sonMort = await BABYLON.CreateSoundAsync("sonMort", "./assets/sounds/mort.mp3");
+        this.#sonBonus = await BABYLON.CreateSoundAsync("sonBonus", "./assets/sounds/bonus.mp3");
+        this.#sonCauchemar = await BABYLON.CreateSoundAsync("sonCauchemar", "./assets/sounds/cauchemar.mp3");
+        this.#sonSortie = await BABYLON.CreateSoundAsync("sonSortie", "./assets/sounds/sortie.mp3");
         
         
 
@@ -75,7 +75,7 @@ export class Son
                     console.warn("Erreur lors de l'arrêt de la musique précédente :", e);
                 }
             }
-        await BABYLON.CreateSoundAsync("musique", "../../assets/sounds/"+nouvelleMusique).then((son) => {
+        await BABYLON.CreateSoundAsync("musique", "./assets/sounds/"+nouvelleMusique).then((son) => {
             this.#musique = son;
             this.#musique.loop = true;
             this.activerMusique();
