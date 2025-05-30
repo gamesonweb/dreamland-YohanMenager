@@ -1,9 +1,9 @@
-import { ChargeurDreamz } from "../../classes/Jeu3/ChargeurDreamz.js";
-import { MenuDreamz } from "../../classes/Jeu3/MenuDreamz.js";
-import { Timer } from '../../classes/Timer.js';
-import { GestionPoints } from "../../classes/GestionPoints.js";
-import { loadSection } from "../../index.js";   
-import { Son } from "../../classes/Jeu3/Son.js";
+import { ChargeurDreamz } from "./classes/Jeu3/ChargeurDreamz.js";
+import { MenuDreamz } from "./classes/Jeu3/MenuDreamz.js";
+import { Timer } from './classes/Timer.js';
+import { GestionPoints } from "./classes/GestionPoints.js";
+import { loadSection } from "./index.js";   
+import { Son } from "./classes/Jeu3/Son.js";
 // import {RecastJSPlugin} from 'https://cdn.babylonjs.com/recast.js';
 // import { BABYLON } from "https://cdn.babylonjs.com/babylon.js";
 
@@ -50,7 +50,7 @@ export function init() {
         skybox.material = skyboxMaterial;
         skybox.infiniteDistance = true;
 
-        skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("../../assets/textures/skybox/espace", scene);
+        skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("./assets/textures/skybox/espace", scene);
         skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
 
         // skyboxMaterial.emissiveColor = new BABYLON.Color3(0.5, 0.5, 0.5); 

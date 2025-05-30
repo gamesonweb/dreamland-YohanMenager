@@ -43,8 +43,8 @@ export class Labyrinthe extends INiveau
     genererLabyrinthe(labyrinthe, navigation = true, hauteur = -5) {
         const plateformeBase = new Plateforme(
             20, 20, 10, 0, 0, 0,               // dimensions et position
-            "../../assets/textures/grass.jpg",                // texture dessus
-            "../../assets/textures/ground.jpg",               // texture côté
+            "./assets/textures/grass.jpg",                // texture dessus
+            "./assets/textures/ground.jpg",               // texture côté
             null,        // normalMap dessus
             null,       // normalMap côté
             this.scene, null, 1.0             // relief, opacité, pas de défilement
