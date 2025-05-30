@@ -155,7 +155,7 @@ export class Entite extends IEntite
 
     async creerModele()
     {
-        let result = await BABYLON.SceneLoader.ImportMeshAsync("", "/assets/3d/", this.nomModele, this.scene);
+        let result = await BABYLON.SceneLoader.ImportMeshAsync("", "../../assets/3d/", this.nomModele, this.scene);
         this.mesh = result.meshes[0];
         this.mesh.name = this.nom;
 
