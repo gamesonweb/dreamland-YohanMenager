@@ -216,7 +216,7 @@ export class MenuDreamz extends Imenu{
             {
                 if(bouton.name == `niveau${numero+1}`)
                 {
-                    bouton.background = "blue";
+                    bouton.background = "rgb(13, 90, 197)";
                     bouton.alpha = 1;
                     bouton.isHitTestVisible = true;
                     bouton.onPointerClickObservable.add(() => {
@@ -225,7 +225,7 @@ export class MenuDreamz extends Imenu{
                 }
                 if(bouton.name == `niveau${numero}`)
                     {
-                        bouton.background = "yellow";
+                        bouton.background = "rgb(252, 255, 61)";
                         // bouton.alpha = 1;
                         // bouton.isHitTestVisible = true;
                         // bouton.onPointerClickObservable.add(() => {

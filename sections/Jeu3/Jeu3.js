@@ -63,7 +63,7 @@ export function init() {
         //et contrairement à la followcamera, ça part pas dans tous les sens au moindre mouvement
         let camera = new BABYLON.ArcRotateCamera("Camera", 5*Math.PI/4, Math.PI/4, 25, chargeur.joueur.hitbox.position, scene);
         // chargeur.camera = camera;
-        // camera.attachControl(canvas, true);//pour faire des tests, doit être désactivé en production
+        camera.attachControl(canvas, true);//pour faire des tests, doit être désactivé en production
        
 
         /*-----------------------------------------------------------------------------lumière-----------------------------------------------------------------------------*/
@@ -210,17 +210,3 @@ function waitForRecast(maxWait = 3000) {
     });
 }
 
-
-
-// if (typeof BABYLON === 'undefined') {
-//     const script = document.createElement('script');
-//     script.src = "https://cdn.babylonjs.com/babylon.js";
-//     script.onload = function() {
-//         console.log("Babylon.js chargé !");
-//         initBabylon();
-//     };
-//     document.head.appendChild(script);
-// } 
-// else {
-//     initBabylon();
-// }
