@@ -176,9 +176,9 @@ static Ascenseur(x, z, yBas, yHaut, scene) {
     const plateforme = new Plateforme(
         20, 20, 2,                         // largeur, profondeur, hauteur
         20 * x, yBas, -20 * z,            // position
-        "../assets/textures/texture1.jpg", // texture dessus
-        "../assets/textures/texture1.jpg",     // texture côté
-        "../assets/textures/normalMap1.jpg", "../assets/textures/normalMap1.jpg",
+        "assets/textures/texture1.jpg", // texture dessus
+        "assets/textures/texture1.jpg",     // texture côté
+        "assets/textures/normalMap1.jpg", "assets/textures/normalMap1.jpg",
         scene,
         10, 1.0
     );
