@@ -1,6 +1,5 @@
 import { IHUD } from "../IHUD.js";
 import { Timer } from "../Timer.js";
-import { Son } from "./Son.js";
 
 export class HUD extends IHUD {
 
