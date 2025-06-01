@@ -2,7 +2,7 @@
 
 ## Présentation
 
-**Dreamz** est un jeu de labyrinthe 3D développé avec Babylon.js. Le joueur incarne un personnage plongé dans un rêve, devant explorer un labyrinthe, collecter des clés, éviter des ennemis (les cauchemars) et atteindre la sortie. Le jeu est conçu pour être accessible sur ordinateur et mobile, avec une interface responsive et immersive.
+**Dreamz** est un jeu de labyrinthe 3D développé avec Babylon.js. Le joueur incarne un personnage plongé dans un rêve, devant explorer un labyrinthe, collecter des clés, éviter des ennemis (les cauchemars) et atteindre la sortie. Le jeu est conçu pour être accessible sur ordinateur.
 
 ---
 
@@ -13,7 +13,7 @@
 - **index.css** : Feuille de style principale pour l’ensemble du site.
 - **assets/** : Contient toutes les ressources du jeu (modèles 3D, textures, images, sons, musiques).
 - **classes/** : Contient toutes les classes JavaScript du jeu, organisées par fonctionnalités (labyrinthe, entités, bonus, gestion des scores, etc.).
-- **sections/** : Contient les différentes sections du site (Accueil, Connexion, Jeu3, etc.), chacune avec son propre script et sa propre vue.
+- **sections/** : Contient les différentes sections du site (Accueil, Connexion, Jeu), chacune avec son propre script et sa propre vue.
 
 ---
 
@@ -27,12 +27,12 @@
 
 ### 2. Déplacement et caméra
 
-- **Déplacement du joueur** : Contrôles clavier (ou tactile sur mobile) pour déplacer le personnage dans le labyrinthe.
-- **Caméra dynamique** : Caméra ArcRotate qui suit le joueur, avec possibilité de zoomer/dézoomer et de pivoter autour du personnage.
+- **Déplacement du joueur** : Contrôles clavier pour déplacer le personnage dans le labyrinthe.
+- **Caméra dynamique** : Caméra ArcRotate qui suit le joueur.
 
 ### 3. Plateformes et ascenseurs
 
-- **Plateformes mobiles** : Certaines plateformes se déplacent automatiquement ou peuvent être activées par le joueur.
+- **Plateformes** : classe qui permet de gérer le sol, avec des textures.
 - **Ascenseurs** : Permettent de changer d’étage dans le labyrinthe.
 
 ### 4. Bonus et objectifs
@@ -45,7 +45,6 @@
 
 - **IA de poursuite** : Les cauchemars patrouillent ou poursuivent le joueur s’il s’approche trop près.
 - **Gestion des collisions** : Si le joueur touche un cauchemar, il perd la partie et doit recommencer le niveau.
-- **Multiples types d’ennemis** : Possibilité d’ajouter différents comportements ou vitesses selon le type de cauchemar.
 
 ### 6. Système de points et classement
 
@@ -61,9 +60,8 @@
 
 ### 8. Interface utilisateur
 
-- **Menu principal** : Permet de choisir un niveau, d’accéder au classement ou de se déconnecter.
+- **Menu principal** : Permet de choisir un niveau et de voir classement.
 - **HUD (Head-Up Display)** : Affiche les informations essentielles (score, temps, clés, etc.) pendant la partie.
-- **Responsive design** : L’interface s’adapte à la taille de l’écran, pour une expérience optimale sur mobile et ordinateur.
 - **Effets visuels et sonores** : Sons d’ambiance, bruitages lors de la collecte de bonus ou de la rencontre avec un cauchemar.
 
 ---
@@ -75,7 +73,7 @@
 - **Entite.js** : Classe de base pour toutes les entités du jeu (joueur, ennemis, bonus).
 - **Personnage.js** : Classe du joueur, gère les déplacements, les collisions et l’état du personnage.
 - **Cauchemar.js** : Classe des ennemis, gère leur comportement, leur déplacement et les interactions avec le joueur.
-- **Plateforme.js** : Gère les plateformes mobiles et les ascenseurs.
+- **Plateforme.js** : Gère les plateformes et les ascenseurs.
 - **Son.js** : Gestion des effets sonores et de la musique de fond.
 - **GestionPoints.js** : Gère le calcul, la sauvegarde et l’affichage des scores et du classement.
 - **MenuDreamz.js** : Gère l’affichage et la navigation dans le menu principal du jeu.
@@ -85,10 +83,10 @@
 
 ## Lancement du projet
 
-1. Ouvre le fichier `index.html` dans un navigateur compatible (Chrome, Firefox, Edge, etc.).
-2. Inscris-toi ou connecte-toi pour accéder au jeu.
-3. Depuis le menu principal, sélectionne un niveau et clique sur "Jouer" pour commencer la partie.
-4. Utilise les touches directionnelles (ou les contrôles tactiles) pour déplacer ton personnage dans le labyrinthe.
+1. Ouvrez le fichier `index.html` dans un navigateur compatible (Chrome, Firefox, Edge, etc.) avec LiveServer actif.
+2. Inscrivez-vous ou connectez-vous pour accéder au jeu.
+3. Depuis le menu principal, sélectionnez un niveau et clique sur "Jouer" pour commencer la partie.
+4. Utilisez ZQSD ou WASD pour déplacer votre personnage dans le labyrinthe.
 
 ---
 

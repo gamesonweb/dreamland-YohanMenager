@@ -21,7 +21,7 @@ export async function loadSection(section) {
 
     const username = getCookie("username");
     // Vérifier la connexion pour les sections de jeux
-    if (["Jeu1", "Jeu2", "Jeu3"].includes(section)) {
+    if (["Jeu3"].includes(section)) {
         if (!username) {
             alert("Vous devez être connecté pour accéder à cette section.");
             return loadSection("Connexion");
